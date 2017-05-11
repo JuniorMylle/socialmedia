@@ -3,6 +3,7 @@ body {
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  overflow: 0;
 }
 h1 {
   font-family: roboto thin;
