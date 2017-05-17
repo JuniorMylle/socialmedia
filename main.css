@@ -1,57 +1,80 @@
 body {
-  animation-name: bg;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  overflow: 0;
+   background-color: white;
+   overflow: 0;
+}
+
+* { 
+   transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1); 
+}
+
+#screen_overlay {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 650px;
+    height: 550px;
+    background-color: #1A1A1A;
+    border-radius: 15px;
+    padding: 0 50px 0 50px;
 }
 h1 {
+  color: white;
   font-family: roboto thin;
-  animation-name: text;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
   text-align: center;
   font-size: 70px;
-  transition: all 0.2s
+  margin-bottom: 10px;
+  margin-top: 30px;
+  
 }
   
 h1:hover {
-  transform: rotate(5deg);
+  transform: rotate(4deg);
   font-size: 80px;
 }
-
-@keyframes bg {
-  0%   {background-color: black;}
-  100% {background-color: white;}
-}
-
-@keyframes text {
-  0%   {color: white;}
-  100% {color: black;}
-}
-
-#social a {
-    animation-name: text;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+#social {
     text-align: center;
     display: block;
-    margin: 0px auto;
-    font-size: 35px;
+    margin: 10px auto;
+    margin-left: -1%;
+    margin-inherit: 15px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 10px 20px;
+}
+p {
     font-family: roboto thin;
-    margin-bottom: 20px;
+    font-size: 25px;
+    color: white;
+    margin-top: -24px;
 }
-#youtube:hover {
-  font-size: 50px;
+p:hover {
+  font-size: 35px;
 }
-#twitch:hover {
-  font-size: 50px;
+a {
+  text-decoration: none;
 }
-#twitter:hover {
-  font-size: 50px;
+#knop {
+    text-align: center;
+    display: inline-block;
+    margin: 10px auto;
+    margin-left: 33%;
+    margin-inherit: 15px;
+    margin-top: -10px;
+    margin-bottom: 15px;
 }
-#discord:hover {
-  font-size: 50px;
+#buttons {   
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-family: roboto thin;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+ }
+ #buttons:hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
 }
